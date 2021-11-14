@@ -1,0 +1,14 @@
+<div class = "top">
+
+  <h1> URL <span class = "color">Shortener</span></h1>
+
+  <div class = "div_center">
+
+    <%= form_with model: @urls do |f|%>
+      <%= f.text_field :url, required: true, placeholder: "Введите URL"%>
+      <%= f.submit "Сократить!"%>
+    <%end%>
+
+  </div>
+
+</div>
